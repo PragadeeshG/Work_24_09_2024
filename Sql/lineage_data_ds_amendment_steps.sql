@@ -1,0 +1,16 @@
+create table if not exists lineage_data_ds_amendment_steps(
+change_request_id Integer not null,
+params_ofchange_request varchar(255) null,
+change_request_status varchar(255) null,
+change_request_approved varchar(255) null,
+pending_on varchar(255) null,
+grp_name varchar(255) null,
+grp_category varchar(255) null,
+start_action varchar(255) null,
+end_action varchar(255) null,
+start_time varchar(255) null,
+end_time varchar(255) null,
+change_request_creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint lineage_data_ds_amendment_steps_pk primary key(change_request_id));
